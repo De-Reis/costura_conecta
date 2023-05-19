@@ -1,0 +1,29 @@
+.menu {
+  font-size: 15px;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(246, 185, 55);
+  list-style: none;
+  margin-bottom: auto;
+
+}
+.link {
+ text-decoration: none;
+ color: white;
+}
+
+.link:hover {
+ cursor:pointer;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  color: rgb(246, 185, 55);
+}
+

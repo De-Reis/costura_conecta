@@ -1,0 +1,93 @@
+<app-header></app-header>
+<div class="container">
+  <img src="../../../../assets/cadastro.png" width="80px" height="60px">
+  <h1 class="fw-medium fw-normal">Profissional de costura cadastre-se aqui:</h1>
+
+  <form class="needs-validation" [formGroup]="formRegister" novalidate>
+    <div class="form-row">
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom01">Primeiro nome:</label>
+        <input type="text" formControlName="nome" class="form-control" id="validationCustom01" placeholder="Digite seu nome" value="" required>
+        <label for="validationCustom02">Sobrenome:</label>
+        <input type="text" formControlName="sobrenome" class="form-control" id="validationCustom02" placeholder="Digite seu sobrenome" value="" required>
+      </div>
+
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Selecione sua especialidade (fique a vontade para marcar quantas quiser):</label>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Diminuir / Alargar" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Diminuir / Alargar
+      </label>
+    </div>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Encurtar pernas" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Encurtar pernas
+      </label>
+    </div>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Ajustar cintura" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Ajustar cintura
+      </label>
+    </div>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Dar volume" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Dar volume
+      </label>
+    </div>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Encurtar manga" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Encurtar mangas
+      </label>
+    </div>
+    <div class="form-check">
+      <input (click)="onEscolha($event)" class="form-check-input" type="checkbox" value="Outros Serviços" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+        Outros Serviços
+      </label>
+    </div>
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Em qual prazo pretende atender?</label>
+    <select formControlName="prazo" class="col-md-3 mb-3" id="inlineFormCustomSelectPref">
+
+      <option value="Urgente (1-2 dias)" selected>Urgente (1-2 dias)</option>
+      <option value="Normal (até duas semanas)">Normal (até duas semanas)</option>
+    </select>
+
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom03">Distrito</label>
+        <input type="text" formControlName="distrito" class="form-control" id="validationCustom03" placeholder="Digite seu Distrito" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">Freguesia:</label>
+        <input type="text" formControlName="freguesia" class="form-control" id="validationCustom04" placeholder="Digite sua Freguesia" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">Morada:</label>
+        <input type="text" formControlName="morada" class="form-control" id="validationCustom04" placeholder="Digite sua Freguesia" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Código Postal:</label>
+        <input type="text"  formControlName="codigoPostal"class="form-control" id="validationCustom05" placeholder="Digite seu código postal" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Contato:</label>
+        <input type="text" formControlName="contato" class="form-control" id="validationCustom05" placeholder="Digite seu contato telemóvel" required>
+      </div>
+      <label for="validationCustom03">Deixei aqui sua rede social:</label>
+      <div class="col-md-3 mb-3">
+
+        <input formControlName="social" type="text" class="form-control" id="inlineFormInputGroup" placeholder="@">
+      </div>
+
+    </div>
+    <button class="botao-register btn btn-primary" type="submit"
+    (click)="onSubmit()"[disabled]="formRegister.invalid">Enviar cadastro</button>
+
+
+  </form>
+</div>
+
+<app-footer></app-footer>

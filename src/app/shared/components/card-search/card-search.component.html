@@ -1,0 +1,17 @@
+
+<div class="container p-5">
+  <div class="row g-14">
+    <div *ngFor="let item of searchs" class="col-3">
+      <div class="card">
+        <img class="card-icon" src="../../../../assets/bordado.png">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">{{ item.nome | uppercase }}</h4>
+          <p class="card-subtitle mb-2 text-muted">{{ item.especialidade }}</p>
+          <h6 class="card-text">{{ item.prazo }}</h6>
+          <p class="card-text">{{ item.distrito }}</p>
+          <a href="#" class="card-link btn btn-primary" [routerLink]="['/card-details', item.id]">Ver mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

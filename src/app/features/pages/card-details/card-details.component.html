@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="container">
+    <div class="card" style="width: 18rem;">
+      <img src="../../../../assets/bordado.png" >
+      <div class="card-body">
+        <h4 class="card-title fw-bold">{{ search?.nome | uppercase }}</h4>
+        <h4 class="card-title">{{ search?.sobrenome }}</h4>
+        <p class="card-subtitle mb-2 text-muted">{{ search?.especialidade }}</p>
+        <h6 class="card-text">Prazo adotado: {{ search?.prazo }}</h6>
+        <p class="card-text">Distrito: {{ search?.distrito}}</p>
+        <p class="card-text">Freguesia: {{ search?.freguesia }}</p>
+        <p class="card-text">Morada: {{ search?.morada }}</p>
+        <p class="card-text">Código Postal: {{ search?.codigo }}</p>
+        <h3 class="card-subtitle mb-2 text-muted fs-4">{{ search?.contato | phone }}</h3>
+        <h3 class="card-subtitle mb-2 text-muted fs-6">{{ search?.social }}</h3>
+        <a href="#" class="card-link btn btn-primary" [routerLink]="['/search']">Voltar</a>
+      </div>
+    </div>
+</div>
+<app-footer></app-footer>

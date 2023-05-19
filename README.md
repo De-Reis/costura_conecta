@@ -17,8 +17,9 @@ Visual Studio Code
 
 ## Descrição 
 
-📍 O Costura Conecta é um aplicativo dedicado a simplificar a busca por profissionais de costura habilidosos. Nosso objetivo é conectar você às costureiras qualificadas que podem transformar suas ideias em realidade.
-Com o Costura Conecta, facilitamos o encontro entre aqueles que precisam de serviços de costura e as costureiras talentosas, garantindo um trabalho de qualidade e atendimento personalizado.
+📍 O Costura Conecta é um aplicativo dedicado a simplificar a busca por profissionais de costura habilidosos. Nosso objetivo é conectar você às costureiros e costureiras qualificados que podem te ajudar com aquela roupa que você gosta, mas que precisa de um ajuste e que não tem nenhuma utilidade que não seja ocupar espaço no seu guarda-roupas.
+
+Com o Costura Conecta, facilitamos o encontro entre aqueles que precisam de serviços de costura e profissionais talentosos, garantindo um trabalho de qualidade e atendimento personalizado.
 
 ### Agradecimentos ###
 
